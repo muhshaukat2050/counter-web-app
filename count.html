@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+    <script>
+
+        let counter = 0;
+
+        function count() {
+            // if (counter === ) return
+            counter++;
+            document.querySelector('h1').innerHTML = counter;
+        }
+
+        function decount() {
+            if (counter === 0 ) return
+            counter--;
+            document.querySelector('h1').innerHTML = counter;
+        }
+        
+
+    </script>
+</head>
+<body>
+    <h1>0</h1>
+    <button onClick="count()">Like</button>
+    <button onclick="decount()">Dislike</button>
+</body>
+</html>
